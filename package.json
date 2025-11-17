@@ -2,19 +2,33 @@
   "name": "admin_customer",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+     "test": "vitest",
+    "test:watch": "vitest --watch"
   },
   "dependencies": {
+    "@vuepic/vue-datepicker": "^12.0.4",
+    "axios": "^1.13.2",
+    "element-plus": "^2.11.8",
+    "flowbite": "^4.0.0",
+    "flowbite-vue": "^0.2.2",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.4.1",
     "vue": "^3.5.24"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.17",
     "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/cli-plugin-unit-jest": "^5.0.9",
+    "@vue/test-utils": "^2.4.6",
+    "jest": "^27.5.1",
+    "jsdom": "^27.2.0",
     "tailwindcss": "^4.1.17",
-    "vite": "^7.2.2"
+    "vite": "^7.2.2",
+    "vitest": "^4.0.9"
   }
 }

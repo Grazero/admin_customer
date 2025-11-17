@@ -6,10 +6,20 @@ import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
-   base: '/admin_customer/',
+   base: process.env.NODE_ENV === 'production' 
+    ? '/admin_customer/'  // ✅ สำหรับ production
+    : '/',                // ✅ สำหรับ development
   test: {
     globals: true,
     environment: "jsdom",
   },
+  build:{
+    outDir: 'dist'
+  },
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
   
 });

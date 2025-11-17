@@ -459,7 +459,7 @@ onMounted(() => {
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-3 gap-3">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div>
                             <span>ชื่อ - นามสกุล</span>
                         </div>
@@ -479,7 +479,7 @@ onMounted(() => {
                         </div>
                     </div>
 
-                    <div class="my-3 grid grid-cols-3 gap-3">
+                    <div class="my-3 grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div>
                             <span>วันเกิด</span>
                         </div>
@@ -489,7 +489,7 @@ onMounted(() => {
                         </div>
                     </div>
 
-                    <div class="my-3 grid grid-cols-3 gap-3">
+                    <div class="my-3 grid grid-cols-2  md:grid-cols-3 gap-3">
                         <div>
                             <span>อายุ</span>
                         </div>
@@ -502,12 +502,11 @@ onMounted(() => {
                             </span>
                         </div>
                     </div>
-
-                    <div class="my-3 grid grid-cols-3 gap-3">
+                    <div class="my-3 grid grid-cols-1  md:grid-cols-3 gap-3">
                         <div>
                             <span>ที่อยู่</span>
                         </div>
-                        <div>
+                        <div class="col-span-2">
                             <textarea :disabled="viewMode" class="w-full px-4 py-2 border border-gray-300 rounded-lg 
                                     focus:outline-none focus:ring-2 focus:ring-blue-500 
                                     focus:border-blue-500 transition duration-150" v-model="address" maxlength="250"></textarea>
@@ -516,9 +515,8 @@ onMounted(() => {
                             </div>
                         </div>
                     </div>
-
                     <!-- จังหวัด -->
-                    <div class="my-3 grid grid-cols-3 gap-3">
+                    <div class="my-3 grid grid-cols-1  md:grid-cols-3 gap-3">
                         <div>
                             <span>จังหวัด</span>
                         </div>
@@ -537,7 +535,7 @@ onMounted(() => {
                     </div>
 
                     <!-- อำเภอ/เขต -->
-                    <div class="my-3 grid grid-cols-3 gap-3">
+                    <div class="my-3 grid grid-cols-1  md:grid-cols-3 gap-3">
                         <div>
                             <span>อำเภอ / เขต</span>
                         </div>
@@ -559,7 +557,7 @@ onMounted(() => {
                     </div>
 
                     <!-- ตำบล/แขวง -->
-                    <div class="my-3 grid grid-cols-3 gap-3">
+                    <div class="my-3 grid grid-cols-1  md:grid-cols-3 gap-3">
                         <div>
                             <span>ตําบล / แขวง</span>
                         </div>
@@ -577,7 +575,7 @@ onMounted(() => {
                         <div></div>
                     </div>
 
-                    <div class="my-3 grid grid-cols-3 gap-3">
+                    <div class="my-3 grid grid-cols-1  md:grid-cols-3 gap-3">
                         <div>
                             <span>รหัสไปษณีย์</span>
                         </div>

@@ -6,6 +6,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
+   base: '/admin_customer/',
   test: {
     globals: true,
     environment: "jsdom",

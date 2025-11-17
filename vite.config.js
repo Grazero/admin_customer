@@ -8,7 +8,7 @@ import { fileURLToPath, URL } from 'node:url'
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
    base: process.env.NODE_ENV === 'production' 
-    ? '/admin_customer/'  // ✅ สำหรับ production
+    ? './'  // ✅ สำหรับ production
     : '/',                // ✅ สำหรับ development
   test: {
     globals: true,
